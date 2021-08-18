@@ -1,31 +1,125 @@
 
-{% extends 'base/base.html' %}
 {% load static %}
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Template Mo">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/uiKit/uikit.min.css' %}" />  <!-- {% static 'css/web/complementos/cabecera.css' %} -->
     <script src="{% static 'Js/uiKit/uikit.min.js' %}"></script>
     <script src="{% static 'Js/uiKit/uikit-icons.min.js' %}"></script>
-
-    <title>{% block title %} home {% endblock %}</title>
     
-</head>
-<body>
+    <title>Art Factory HTML CSS Template</title>
+<!--
 
+ART FACTORY
+
+https://templatemo.com/tm-537-art-factory
+
+-->
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/css_template/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/css_template/font-awesome.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/css_template/templatemo-art-factory.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/css_template/owl-carousel.css' %}">
+
+    </head>
+    
+    <body>
+    
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+    
+
+    
+    <!-- ***** Header Area Start ***** -->
     {% block navbar %}
-        {% include "web/complementos/navbar.html" %}
+        {% include "web/complementos/cabecera.html" %}
     {% endblock %}
+    <!-- ***** Header Area End ***** -->
 
-    {% block content %}
-        {% include "web/complementos/cabecera.html" %}  
-        {% include "web/complementos/cuerpo.html" %}  
+
+
+    <!-- ***** Welcome Area Start ***** -->
+    {% block welcome-area %}
+        {% include "web/complementos/welcomeAreaStart.html" %}
     {% endblock %}
+    <!-- ***** Welcome Area End ***** -->
 
+
+    <!-- ***** Features Big Item Start ***** -->
+    {% block bigItem1 %}
+        {% include "web/complementos/bigItem1.html" %}
+    {% endblock %}
+    <!-- ***** Features Big Item End ***** -->
+
+
+    <!-- ***** Features Big Item2 Start ***** -->
+    {% block bigItem2 %}
+        {% include "web/complementos/bigItem2.html" %}
+    {% endblock %}
+    <!-- ***** Features Big Item2 End ***** -->
+
+
+    <!-- ***** Features Small Start ***** -->
+    {% block features %}
+        {% include "web/complementos/features.html" %}
+    {% endblock %}
+    <!-- ***** Features Small End ***** -->
+
+
+    <!-- ***** Frequently Question Start ***** -->
+    {% block frecuently %}
+        {% include "web/complementos/frecuently.html" %}
+    {% endblock %}
+    <!-- ***** Frequently Question End ***** -->
+
+
+
+    <!-- ***** Contact Us Start ***** -->
+    {% block contact %}
+        {% include "web/complementos/contact.html" %}
+    {% endblock %}
+    <!-- ***** Contact Us End ***** -->
+
+    
+    <!-- ***** Footer Start ***** -->
     {% block footer %}
         {% include "web/complementos/footer.html" %}
     {% endblock %}
+    <!-- ***** Footer End ***** -->
 
-</body>
+    <!-- jQuery -->
+    <script src="{% static 'Js/js_template/jquery-2.1.0.min.js' %}"></script>
+
+    <!-- Bootstrap -->
+    <script src="{% static 'Js/js_template/popper.js' %}"></script>
+    <script src="{% static 'Js/js_template/bootstrap.min.js' %}"></script>
+
+    <!-- Plugins -->
+    <script src="{% static 'Js/js_template/owl-carousel.js' %}"></script>
+    <script src="{% static 'Js/js_template/scrollreveal.min.js' %}"></script>
+    <script src="{% static 'Js/js_template/waypoints.min.js' %}"></script>
+    <script src="{% static 'Js/js_template/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'Js/js_template/imgfix.min.js' %}"></script> 
+    
+    <!-- Global Init -->
+    <script src="{% static 'Js/js_template/custom.js' %}"></script>
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  </body>
+</html>
