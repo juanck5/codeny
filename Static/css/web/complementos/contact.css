@@ -5,3 +5,30 @@
 .section-heading h2{
     margin-top: 85px;
 }
+
+.content-socials{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.red{
+    padding: 10px 25px;
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+    background-color: whitesmoke;
+    transition: all .3s ease-out;
+    color: #00b4c7;
+}
+
+.red:hover{
+    background-color: teal;
+    color: white;
+    transition: all .3s ease-out;
+}
+
+.red:hover > i{
+    transition: all .3s ease-out;
+    color: white;
+}
