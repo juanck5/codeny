@@ -14,7 +14,8 @@ import smtplib
 def index(request):
     return render(request, 'web/index.html')
 
-
+def boardAdmin(request):
+    return render(request, 'dashboards/dashboard.html')
 
 
 
