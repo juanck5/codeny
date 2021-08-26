@@ -32,9 +32,9 @@
             <!-- ***** Contact Map End ***** -->
 
             <!-- ***** Contact Form Start ***** -->
-            <div id="formulario" class="col-lg-6 col-md-6 col-sm-12">
+            <div id="form-contact" class="col-lg-6 col-md-6 col-sm-12">
                 <div class="contact-form">
-                    <form id="contact" action="" method="post">{% csrf_token %}
+                    <form id="contact" action="{% url 'contactForm' %}" method="post">{% csrf_token %}
                       <div class="row">
                         <div class="col-md-6 col-sm-12">
                           <fieldset>
@@ -53,7 +53,7 @@
                         </div>
                         <div class="col-lg-12">
                           <fieldset>
-                            <button type="submit" id="form-submit" class="main-button">Send It</button>
+                            <button type="submit" id="form-submit" class="main-button">Enviar</button>
                           </fieldset>
                         </div>
                       </div>
@@ -63,4 +63,7 @@
             <!-- ***** Contact Form End ***** -->
         </div>
     </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="{% static 'Js/js_template/jquery-2.1.0.min.js' %}"></script>
+    <script src="{% static 'Js/complementos/contact.js' %}"></script>
 </section>

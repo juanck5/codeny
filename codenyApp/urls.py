@@ -1,10 +1,14 @@
 
 from django.conf.urls import url, include
 
-# vistas a usar.
-from codenyApp.views import index
+# Views use.
+from codenyApp.views import *
 
 urlpatterns = [
     url(r'^$', index),
+    url(r'^administracion$', boardAdmin , name="boardAdmin"),
+
+    #REQUESTS
+    url(r'^contactForm/$', contactForm , name= 'contactForm'),
     
 ]
