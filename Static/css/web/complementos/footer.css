@@ -1,5 +1,5 @@
 
-.col_white_amrc { color:#FFF;}
+/* .col_white_amrc { color:#FFF;}
 footer { width:100%; background-color:#3a4b53; min-height:250px; padding:10px 0px 25px 0px ; margin-top: 40px;}
 .pt2 { padding-top:40px ; margin-bottom:20px ;}
 footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
@@ -32,6 +32,17 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
 .social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
 .social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
 .social_footer_ul li a { color:#CCC; border:1px solid #CCC; padding:8px;border-radius:50%;}
-.social_footer_ul li i {  width:20px; height:20px; text-align:center;}
+.social_footer_ul li i {  width:20px; height:20px; text-align:center;} */
 
 /* Credit to https://bootsnipp.com/snippets/bxDBA */
+
+/* 
+footer{
+	background-color: #334257;
+	margin: 0%;
+	padding: 0%;
+	align-items: center;
+
+} */
+
+ 
