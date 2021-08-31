@@ -4,6 +4,9 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from django.core.mail import send_mail, BadHeaderError
 from django.shortcuts import render
+from django.contrib.auth import authenticate,logout
+from django.contrib.auth import login as auth_login
+from django.views.decorators.csrf import csrf_protect
 from tkinter import *
 from django.http import HttpResponse
 import smtplib
@@ -37,8 +40,29 @@ def funcion(request):
 
 
 # REQUESTS
-
-
+@csrf_protect
+def login_user(request):
+    if request.POST:
+        username = request.POST['username']
+        password = request.POST['password']
+        
+        user = authenticate(username=username, password=password)
+        if user is not None:
+            if user.is_active:
+                auth_login(request, user)
+                return HttpResponse("correcto")
+        else:
+            #  Retornar a una pagina de error
+            try:
+                user = User.objects.get(username=username)
+                # si lo encuentra quiere decir que el problema está en la contraseña
+                return HttpResponse("contraseñaIncorrecta")
+            except User.DoesNotExist:
+                # no está registrado
+                return HttpResponse("usuarioNoExiste")
+        
+    return render(request, 'web/index.html')
+   
 def contactForm(request):
 
     print(request.POST)
