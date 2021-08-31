@@ -139,11 +139,15 @@
     },
 
     openAccordion: function(toggle, content) {
+      if(toggle.classList.contains("is-open")){
+        toggle.classList.remove(" is-open")
+      }else{
       if (content.children.length) {
         toggle.classList.add("is-open");
         let final_height = Math.floor(content.children[0].offsetHeight);
         content.style.height = final_height + "px";
       }
+    }
     },
 
     closeAccordion: function(toggle, content) {

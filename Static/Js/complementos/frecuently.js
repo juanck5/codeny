@@ -1,0 +1,4 @@
+$().click(funcion(e){
+    
+}):
+
