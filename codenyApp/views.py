@@ -1,9 +1,10 @@
 
+from email.mime import text
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from django.core.mail import send_mail, BadHeaderError
 from django.shortcuts import render
-
+from tkinter import *
 from django.http import HttpResponse
 import smtplib
 
@@ -16,6 +17,22 @@ def index(request):
 
 def boardAdmin(request):
     return render(request, 'dashboards/dashboard.html')
+
+def login(request):
+   return render(request, 'dashboards/login.html')
+
+def profile(request):
+   return render(request, 'dashboards/profile.html') 
+ 
+def tables(request):
+   return render(request, 'dashboards/tables.html') 
+
+def billing(request):
+   return render(request, 'dashboards/billing.html')   
+
+
+def funcion(request):
+   print("fui presionado")
 
 
 
