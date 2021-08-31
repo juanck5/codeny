@@ -5,7 +5,7 @@ from django.conf.urls import url, include
 from codenyApp.views import *
 
 urlpatterns = [
-    url(r'^$', index),
+    url(r'^$', index , name="index"),
     url(r'^administracion$', boardAdmin , name="boardAdmin"),
     url(r'^login$',login, name="login" ),
     url(r'^tables$',tables, name="tables" ),
