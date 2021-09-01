@@ -11,7 +11,6 @@ $("#loginForm").on("submit" ,function(e){
             csrfmiddlewaretoken:datica[0].value,
             username: datica[1].value,
             password: datica[2].value,
-            
         },
         dataType: "html",
         beforeSend: function(response){   
@@ -19,8 +18,6 @@ $("#loginForm").on("submit" ,function(e){
        },
        success: function (response) {
            if(response == "correcto"){
-               /* swal("Bien!", "El docente se ha registrado con éxito.", "success");
-               $('.bloque').parents('#contenedor-central').load('/crearDocente'); */
                console.log("CORRECTO");
                window.open("/administracion","_self"); 
              }

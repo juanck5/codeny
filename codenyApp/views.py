@@ -16,7 +16,9 @@ import smtplib
 
 # PAGES
 def index(request):
-    return render(request, 'web/index.html')
+    nombre = "roberto"
+    user = "asjchjdsch"
+    return render(request, 'web/index.html' , {'nombre' : nombre, 'nombre2' : user})
 
 def boardAdmin(request):
     return render(request, 'dashboards/dashboard.html')

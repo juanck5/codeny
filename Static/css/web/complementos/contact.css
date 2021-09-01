@@ -32,3 +32,13 @@
     transition: all .3s ease-out;
     color: white;
 }
+
+.contact-form h3{
+    color: white;
+    font-family: "Poppins";
+    margin-bottom: 40px;
+}
+
+input ::placeholder{
+    color: white;
+}

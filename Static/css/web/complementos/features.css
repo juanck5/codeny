@@ -8,3 +8,34 @@
     color: white!important;
     margin-bottom: 25px!important;
 }
+
+
+
+.container-plans{
+    margin-top: 30px;
+    width: 100vw;
+    height: auto;
+    align-items: center;
+}
+
+.container-plans h3{
+    text-align: center;
+    color: white;
+    font-family: "Poppins","sans-serif";
+    margin-bottom: 30px;
+}
+
+.container-plans a{
+    background-color: white;
+    color: #0092e1;
+    font-weight: 600;
+    font-family: "Poppins" , "Sans-serif";
+    
+}
+
+.container-plans a:hover{
+    background-color: #f55858;
+    color: white;
+    font-weight: 600;
+    font-family: "Poppins" , "Sans-serif";
+}
