@@ -2,3 +2,19 @@
 .img-fluid{
     max-width: 100%!important;
 }
+
+.container-bigItem1{
+    background: linear-gradient( 135deg, rgba(0, 136, 232, 1) 0%, rgba(0, 182, 198, 1) 0%, rgba(0, 136, 232, 1) 100% );
+}
+
+.right-text .left-heading h5{
+    color: white!important;
+}
+
+.right-text .left-text p{
+    color: white;
+}
+
+.right-text{
+    padding-left: 50px;
+}

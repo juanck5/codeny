@@ -100,6 +100,11 @@ figcaption {
   padding: 0;
   border: 0;
   outline: 0;
+  
+}
+
+body{
+  overflow-x: hidden;
 }
 
 .clearfix:after {
@@ -397,8 +402,7 @@ header
 
 .header-area .main-nav .nav li:hover a {
   color: #ffffff;
-  font-weight: 500;
-  transform: scale(1.1);
+  transform: scale(1.001);
 }
 
 .header-area .main-nav .nav li.submenu {
@@ -509,7 +513,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #fff;
+  background-color: rgb(0, 0, 0);
   display: block;
   position: absolute;
   width: 30px;
@@ -529,7 +533,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #fff;
+  background-color: rgb(0, 0, 0);
   display: block;
   position: absolute;
   width: 30px;
@@ -606,6 +610,16 @@ header
 
 .header-area.header-sticky .nav {
   margin-top: 20px !important;
+  color: #00b4c6;
+}
+
+.header-area.header-sticky .nav li a{
+  color: black;
+  font-weight: 600;
+}
+
+.header-area.header-sticky .nav li a:hover{
+  color: #00abcd;
 }
 
 .header-area.header-sticky .nav li a.active {
@@ -631,6 +645,7 @@ header
     height: 80px;
     box-shadow: none;
     text-align: center;
+    background-color: #fff;
   }
   .header-area .container {
     padding: 0px;
@@ -731,7 +746,7 @@ welcome
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../../images/banner-bg.png);
+  background-image: url(../../images/marketing-bg.png);
   background-repeat: no-repeat;
 /*
 TRY IT ... with or without CENTER CENTER
@@ -811,12 +826,20 @@ TRY IT ... with or without CENTER CENTER
 
 @media (max-width: 765px) {
   .welcome-area {
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
   }
   .welcome-area .header-text {
     top: 55% !important;
     transform: perspective(1px) translateY(-50%) !important;
     text-align: center;
+  }
+
+  .image{
+    display: none;
+  }
+
+  .container-text{
+    margin-top: 100px;
   }
   .welcome-area .header-text .buttons {
     display: none;

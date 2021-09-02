@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,,800,900);
+
+ .container-text {
+	 position: absolute;
+	 -webkit-transform: translate(-50%, -50%);
+	 -ms-transform: translate(-50%, -50%);
+	 transform: translate(-50%, -50%);
+	 left: 50%;
+	 top: 50%;
+     
+}
+ .container-text .title {
+	 font-weight: 800;
+	 color: transparent;
+	 font-size: 110px;
+	 background: url("https://apnetwork2016-wpengine.netdna-ssl.com/wp-content/uploads/2016/01/AlfaPeople-Best-Practice-JavaScript-Code-Quality-780x551.jpg") repeat;
+	 background-position: 40% 50%;
+	 -webkit-background-clip: text;
+	 position: relative;
+	 text-align: center;
+	 line-height: 90px;
+	 letter-spacing: -8px;
+     padding: 10px;
+}
+ .container-text .subtitle p{
+	 display: block;
+	 text-align: center;
+	 text-transform: uppercase;
+	 padding-top: 10px;
+     color: black;
+}
+ 

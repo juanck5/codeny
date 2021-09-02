@@ -5,7 +5,7 @@
     <div class="container-fluid">
         <div class="row">
             <!-- ***** Contact Map Start ***** -->
-            <div class="col-lg-6 col-md-6 col-sm-12 section_map">
+            <div class="col-lg-6 col-md-6 col-sm-12 section_map" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
 
               <!-- INFORMATION CONTACT -->
                 <div class="row">
@@ -32,7 +32,7 @@
             <!-- ***** Contact Map End ***** -->
 
             <!-- ***** Contact Form Start ***** -->
-            <div id="form-contact" class="col-lg-6 col-md-6 col-sm-12">
+            <div id="form-contact" class="col-lg-6 col-md-6 col-sm-12" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
                 <div class="contact-form">
                   <h3>Envíanos un mensaje</h3>
                     <form id="contact" action="{% url 'contactForm' %}" method="post">{% csrf_token %}
