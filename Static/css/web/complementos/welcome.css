@@ -21,6 +21,7 @@
 	 line-height: 90px;
 	 letter-spacing: -8px;
      padding: 10px;
+	 padding-top: 140px;
 }
  .container-text .subtitle p{
 	 display: block;
@@ -28,5 +29,14 @@
 	 text-transform: uppercase;
 	 padding-top: 10px;
      color: black;
+	 font-weight: 500;
 }
- 
+.image{
+	padding-top: 140px;
+}
+@media (max-width: 765px){
+.welcome-area .container-text .title{
+		font-size: 70px;
+		letter-spacing: -4px;
+	}
+}
