@@ -7,7 +7,7 @@ from django.shortcuts import render
 from django.contrib.auth import authenticate,logout
 from django.contrib.auth import login as auth_login
 from django.views.decorators.csrf import csrf_protect
-from tkinter import *
+# from tkinter import *
 from django.http import HttpResponse
 import smtplib
 
